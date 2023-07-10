@@ -2,6 +2,11 @@
 * {
   margin: 0;
   padding: 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+*::-webkit-scrollbar {
+  display: none;
 }
 
 #stars {
@@ -179,8 +184,6 @@
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
 }
 
 .project {
@@ -195,6 +198,12 @@
   border-radius: 5px;
   text-align: left;
   max-width: 450px;
+}
+.project:nth-child(4) {
+  margin-top: -88px;
+}
+.project:nth-child(6) {
+  margin-top: -78px;
 }
 .project h2 {
   margin: 0;
@@ -250,4 +259,14 @@
   z-index: -1;
   background-image: url("../images/grain.svg");
   background-color: #2D353C;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+#portfolio {
+  height: 100vh !important;
+  overflow-y: scroll;
 }/*# sourceMappingURL=style.css.map */

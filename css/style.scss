@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+  display: none;
+}
 }
 #stars {
   content: "e";
@@ -679,22 +684,29 @@ background: transparent;
     gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
+  
+    // align-items: stretch;
+    // align-content: end;
+  }
+  .project{
+  // float: left;
+  position: relative;
+  z-index: 2;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  width: 50%;
+  border-radius: 5px;
+  text-align: left;
+  max-width: 450px;
+&:nth-child(4){
+  margin-top: -88px;
 }
-.project{
-    position: relative;
-    z-index: 2;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 20px;
-    width: 50%;
-    border-radius: 5px;
-    text-align: left;
-    max-width: 450px;
-    // margin-bottom: 20px;
+&:nth-child(6){
+  margin-top: -78px;
+}
     
     h2{
         margin: 0;
@@ -757,3 +769,19 @@ a{
         background-color: #2D353C;
     }
 }
+
+.flex{
+  display: flex;
+  gap: 10px;
+}
+
+#portfolio{
+  height: 100vh !important;
+  overflow-y: scroll;
+  
+}
+
+
+  
+
+
