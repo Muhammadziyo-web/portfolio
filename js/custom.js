@@ -1,8 +1,8 @@
-//
+
 $(document).ready(function () {
   $("#fullpage").fullpage({
     verticalCentered: false,
-    scrollingSpeed: 600,
+    scrollingSpeed: 300,
     autoScrolling: false,
     css3: true,
     navigation: true,
@@ -106,3 +106,15 @@ projects.forEach((e) => {
 
   document.querySelector(".project-wrapper").appendChild(card);
 });
+
+
+document.querySelector("#contactForm").addEventListener('submit', (e) => {
+  e.preventDefault()
+  fetch(
+    `https://api.telegram.org/bot6312263274:AAGQ6PKm-YflSDjEbcz48fl9pbyNozeGUGY/sendMessage?chat_id=1939087676&text=Name: ${e.target[0].value}, Email: ${e.target[1].value}, Message: ${e.target[2].value} `
+  );
+  e.target[0].value=''
+  e.target[1].value=''
+  e.target[2].value=''
+
+})
