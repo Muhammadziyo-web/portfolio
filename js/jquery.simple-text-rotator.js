@@ -1,15 +1,4 @@
-/* ===========================================================
- * jquery-simple-text-rotator.js v1
- * ===========================================================
- * Copyright 2013 Pete Rojwongsuriya.
- * http://www.thepetedesign.com
- *
- * A very simple and light weight jQuery plugin that 
- * allows you to rotate multiple text without changing 
- * the layout
- * https://github.com/peachananr/simple-text-rotator
- *
- * ========================================================== */
+
 
 !function($){
   
