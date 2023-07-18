@@ -14,4 +14,4 @@ Browse through my portfolio of projects to see my work in action. Each project i
 ## Send a Message
 If you would like to discuss a potential collaboration, project, or have any inquiries, please feel free to send me a message.
 
-Thank you for visiting my personal website repository. I look forward to connecting with you!
+Thank you for visiting my personal website repository. I look forward to connecting with you! 
